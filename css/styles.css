@@ -1,0 +1,134 @@
+/** {
+	outline: solid 2px red !important;
+}*/
+
+@font-face {
+	font-family: 'Robot';
+	src: url('../fonts/MrRobot.woff') format('woff'),
+         url('../fonts/MrRobot.ttf') format('truetype');
+
+}
+
+body {
+	width: 100%;
+	margin: 0 0;
+	background: #ccc;
+	z-index: 2;
+}
+
+header {
+	background: url('../img/galaxy2.jpg')no-repeat bottom fixed;
+	background-size: cover;
+	height: 650px;
+	padding-top: 15px;
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Robot', sans-serif;
+	font-weight: 500;
+	clear: both;
+	padding-top: 150px;
+	color: rgba(215,0,0,.9);
+
+}
+
+
+span {
+	display: inline; /*Allows the h1 element to have a border by adding block level to it*/
+	padding: 0.2em 0.2em 0.1em 0.2em;/* adds padding around the box*/
+	border: black solid 5px;
+	text-transform: uppercase;
+	font-size: 75px;
+	letter-spacing: .12em;
+
+}
+
+nav {
+	float: right;
+	margin-top: -60px;
+}
+
+nav a {
+	display: inline-block;
+	margin: 10px;
+	text-transform: uppercase;
+
+}
+
+nav a:hover {
+	color: rgba(0,0,0,1);
+}
+
+.content {
+	position: relative;
+	z-index: 2;
+	margin-bottom: 273px;
+	background: #ccc;
+}
+
+section ul li img {
+	z-index: 3;
+}
+
+.kangaroo {
+	height: 5em;
+	width: 5em;
+	padding: 0 0 0 10px;
+}
+
+.kicker {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: .21em;
+	font-family: 'Robot', sans-serif;
+	color: red;
+	font-size: 18px;
+}
+
+/*****************************************
+		FOOTER STYLES
+*******************************************/
+footer {
+	background: black;
+	color: white;
+	padding: 40px 0;/*moves the info down*/
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
+
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+footer li {
+	list-style: none;
+	display: inline;
+}
+
+.copy {
+	clear: both;
+	padding: 0 0 0 0;
+	margin: 0;
+	text-align: center;
+	margin-top: 35px;
+	color: yellow;
+}
+
+/**********************************************
+		Media Queries
+*************************************************/
+
+@media screen and (max-width: 663px) {
+	span {
+		border: none;
+	}
+}
