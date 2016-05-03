@@ -42,7 +42,7 @@ h1 {
 }
 
 
-span {
+.yolo {
 	display: inline; /*Allows the h1 element to have a border by adding block level to it*/
 	padding: 0.2em 0.2em 0.1em 0.2em;/* adds padding around the box*/
 	border: black solid 5px;
@@ -67,7 +67,7 @@ nav a {
 	text-align: center;
 }
 
-}
+
 
 nav a:hover {
 	color: rgba(0,0,0,1);
@@ -175,15 +175,17 @@ section {
 .face-round {
 	width: 200px;
 	height: 200px;
-	border-radius: 40%;
-	background: url('../img/Penguin2.png') no-repeat right;
+/*	border-radius: 40%;
+	background: url('../img/Penguin2.png') no-repeat right;*/
 }
 
 .sec1 {
 	height: 50px;
 	background: Black;
 	margin: 0 auto;
+
 }
+
 .sec2 {
 	height: 800px;
 
@@ -197,6 +199,11 @@ section {
 
 .activeSoc a:active {
 	color: red;
+}
+
+.aboutme {
+	font-size: 25px;
+	text-align: center;
 }
 /**********************************************
 		Media Queries
@@ -231,10 +238,10 @@ section {
 }
 
 
-#hide1 {
-	color: black;
+#hide1, #hide2, #hide3, #hide4, #hide5 {
+	color: white;
 	margin: -35px 10px 0 0;
-	font-family: sans-serif;
+	font-family: 'Oldenburg', cursive;
 	font-weight: 700;
 	font-size: 4em;
 
@@ -242,4 +249,28 @@ section {
 
 .sound {
 	display: none;
+}
+
+#hide3 {
+	font-size: 3.5em;
+}
+
+#hide6 {
+	color: green;
+	margin: -35px 10px 0 0;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 1.8em;
+}
+
+#hide1, #hide4 {
+	color: red;
+}
+
+#hide2, #hide5 {
+	color: white;
+}
+
+#hide3, #hide6 {
+	color: blue;
 }
