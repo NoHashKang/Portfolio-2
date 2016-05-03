@@ -94,7 +94,7 @@ $win.resize(getWidth).mousemove(function(e) {
     
     rgb = [
         Math.round(e.pageX/w * 255),
-        Math.round(e.pageY/h * 500),
+        Math.round(e.pageY/h * 255),
         150
     ];
     
@@ -129,9 +129,17 @@ $win.resize(getWidth).mousemove(function(e) {
 }).resize();
 
 
+	$('.penhide').hide()
+	$('#pen1').fadeIn('fast')
+	$('#pen2').fadeIn(1500)
+	$('#pen3').fadeIn(2000)   
+	$('#pen4').fadeIn(2500)
+	$('#pen5').fadeIn(3000)
+	$('#pen6').fadeIn(3500)
+		
+	});
 
 
-});
 
 
 
@@ -153,19 +161,8 @@ $win.resize(getWidth).mousemove(function(e) {
 
 
 	// $('.penhide').hide();
-	// $('#pen1').fadeIn();
-	// .animate({
-	// 	top: '275px'
-	// }, 5000);
-	// $('.penhide').hide()
-	// $('#pen1').fadeIn('fast')
-	// $('#pen2').fadeIn(1500)
-	// $('#pen3').fadeIn(2000)   I cannot seem to get easeOnBounce to work, when I remove it the code works and images raise on mouseover.. Any help appreciated
-	// $('#pen4').fadeIn(2500)
-	// $('#pen5').fadeIn(3000)
-	// $('#pen6').fadeIn(3500)
-		
-	
+
+
 
 // //Adds toggle of click red on social icons
 
