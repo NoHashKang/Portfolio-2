@@ -16,6 +16,10 @@ body {
 	z-index: 2;
 }
 
+section {
+	z-index: 1;
+}
+
 header {
 	background: url('../img/galaxy2.jpg')no-repeat bottom fixed;
 	background-size: cover;
@@ -24,6 +28,7 @@ header {
 	width: 100%;
 	max-width: 100%;
 	margin: 0 auto;
+
 }
 
 h1 {
@@ -48,19 +53,29 @@ span {
 }
 
 nav {
-	float: right;
+
 	margin-top: -60px;
+
 }
 
 nav a {
 	display: inline-block;
 	margin: 10px;
-	text-transform: uppercase;
+	text-transform: uppercase;	
+}
+.navi {
+	text-align: center;
+}
 
 }
 
 nav a:hover {
 	color: rgba(0,0,0,1);
+}
+
+section {
+	height: 800px;
+	background: red;
 }
 
 .content {
@@ -90,13 +105,25 @@ section ul li img {
 	font-size: 18px;
 }
 
+.penhide {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	opacity: 1;
+	z-index: 2;
+	margin-bottom: -100px;
+	
+}
+
+
+
 /*****************************************
 		FOOTER STYLES
 *******************************************/
 footer {
 	background: black;
 	color: white;
-	padding: 40px 0;/*moves the info down*/
+	padding: 50px 0;/*moves the info down*/
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -123,6 +150,54 @@ footer li {
 	color: yellow;
 }
 
+
+/**********************************************
+		About Section
+***********************************************/
+h3 {
+	text-align: center;
+	z-index: -4;
+	margin: 0 0;
+	padding-top: 10px;
+}
+
+.face {
+	max-width: 780px;
+/*	display: flex;*/
+}
+
+section {
+	background: #ccc;
+	margin-bottom: 250px;
+	height: 2500px;
+}
+
+.face-round {
+	width: 200px;
+	height: 200px;
+	border-radius: 40%;
+	background: url('../img/Penguin2.png') no-repeat right;
+}
+
+.sec1 {
+	height: 50px;
+	background: Black;
+	margin: 0 auto;
+}
+.sec2 {
+	height: 800px;
+
+}
+.sec1 h3 {
+	margin: 0 auto;
+	padding: 10px 0 0;
+	color: white;
+
+}
+
+.activeSoc a:active {
+	color: red;
+}
 /**********************************************
 		Media Queries
 *************************************************/
@@ -131,4 +206,40 @@ footer li {
 	span {
 		border: none;
 	}
+}
+
+
+/**************************************************
+	Img Animate 6
+*****************************************************/
+
+
+/*#pen1 {
+	margin: 0 50px 0 0;
+}
+#pen2 {
+	margin: 0 50px 0 0;
+}
+#pen3 {
+	margin: 0 50px 0 0;
+}*/
+
+#pen1, #pen2, #pen3, #pen4, #pen5, #pen6 {
+	padding: 0;
+	margin-bottom: -275px;
+
+}
+
+
+#hide1 {
+	color: black;
+	margin: -35px 10px 0 0;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 4em;
+
+}
+
+.sound {
+	display: none;
 }
